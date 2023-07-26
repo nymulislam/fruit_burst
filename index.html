@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fruit Burst</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- tailwind & daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/aad059f8f0.js" crossorigin="anonymous"></script>
+
+    <!-- google font lato link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+    <!-- tailwind customization -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary-color': '#F85559',
+              }
+            }
+          }
+        }
+      </script>
+    </head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+
+    </main>
+    <footer class="footer footer-center p-10 bg-[#121212] text-white rounded">
+        <div class="flex">
+            <img src="./images/logo.png" alt="">
+            <h4 class="text-4xl font-semibold">Fruit Burst</h4>
+        </div>
+        <div class="grid grid-cols-2 md:grid-flow-col gap-4">
+            <a class="link link-hover">Home</a> 
+            <a class="link link-hover">About Us</a> 
+            <a class="link link-hover">Shop</a> 
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </div> 
+        <div>
+              <div class="grid grid-flow-col gap-4">
+                <a class="cursor-pointer"><i class="fa-brands fa-twitter"></i></a> 
+                <a class="cursor-pointer"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="cursor-pointer"><i class="fa-brands fa-youtube "></i></a>
+                <a class="cursor-pointer"><i class="fa-brands fa-linkedin-in"></i></a> 
+                <a class="cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
+                <a class="cursor-pointer"><i class="fa-brands fa-apple"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
