@@ -42,9 +42,9 @@
     <header class="container mx-auto">
       <!-- navbar section -->
       <nav>
-        <div class="navbar bg-primary-color rounded-full my-7 h-14">
+        <div class="navbar md:bg-primary-color rounded-full my-7 h-14 flex flex-row-reverse md:flex-row gap-40 md:gap-0">
               <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <label tabindex="0" class="btn btn-ghost flex justify-end lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current "><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </label>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -66,14 +66,15 @@
             <a href="">
               <img class="w-10 ml-4" src="./images/logo.png" alt="">
             </a>
-            <a class="btn btn-outline border-primary-color hover:bg-primary-color hover:border-primary-color normal-case text-xl text-white">Fruit Burst</a>
+            <a class="btn md:btn-outline md:border-primary-color md:hover:bg-primary-color md:hover:border-primary-color md:bg-primary-color bg-white hover:bg-white hover:border-white normal-case text-xl md:text-white">Fruit Burst</a>
           </div>
           <div class="navbar-end">
             <div class="form-control">
-              <div class="flex">
-                <input type="text" placeholder="Search here" class="input rounded-full" />
-                <button class="btn btn-circle -ml-12 bg-white hover:bg-primary-color hover:text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              <div class="hidden lg:flex relative pr-2 ">
+                <input type="text" placeholder="Search here" class="input rounded-full h-10" />
+                  <span class="absolute top-2 right-5 cursor-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-[25px] text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </span>
                 </button>
               </div>
             </div>
@@ -83,8 +84,8 @@
 
       <!-- banner section -->
       <section>
-        <div class="carousel w-full rounded-lg">
-          <div id="slide1" class="carousel-item relative w-[1024px] h-96">
+        <div class="carousel w-full rounded-lg relative">
+          <div id="slide1" class="carousel-item relative md:w-[1024px] md:h-96">
             <div class="hero w-full" style="background-image: url(images/banner1.png);">
               <div class="hero-overlay bg-opacity-40"></div>
               <div class="hero-content text-center">
@@ -100,7 +101,7 @@
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div> 
-          <div id="slide2" class="carousel-item relative w-[1024px] h-96">
+          <div id="slide2" class="carousel-item relative md:w-[1024px] md:h-96">
             <div class="hero w-full" style="background-image: url(images/banner2.png);">
               <div class="hero-overlay bg-opacity-40"></div>
               <div class="hero-content text-center">
@@ -116,7 +117,7 @@
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div> 
-          <div id="slide3" class="carousel-item relative w-[1024px] h-96">
+          <div id="slide3" class="carousel-item relative md:w-[1024px] md:h-96">
             <div class="hero w-full" style="background-image: url(images/banner3.png);">
               <div class="hero-overlay bg-opacity-40"></div>
               <div class="hero-content text-center">
@@ -132,7 +133,7 @@
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div> 
-          <div id="slide4" class="carousel-item relative w-[1024px] h-96">
+          <div id="slide4" class="carousel-item relative md:w-[1024px] md:h-96">
             <div class="hero" style="background-image: url(images/banner4.png);">
               <div class="hero-overlay bg-opacity-40"></div>
               <div class="hero-content text-center">
@@ -149,6 +150,29 @@
             </div>
           </div>
         </div>
+
+        <div class="hidden lg:flex bg-white justify-center rounded-lg max-w-4xl mx-auto -mt-14 relative gap-7 py-6">
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit1.png" alt="">
+            <a class="link link-hover text-base font-semibold">Red Grapes</a>
+            </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit2.png" alt="">
+            <a class="link link-hover text-base font-semibold">Orange</a>
+            </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit3.png" alt="">
+            <a class="link link-hover text-base font-semibold">Mango</a>
+            </div>
+          <div class="flex flex-col items-center">
+            <img src="./images/fruit4.png" alt="">
+            <a class="link link-hover text-base font-semibold">Strawberry</a>
+            </div>
+          <div class="flex flex-col items-center">
+          <img src="./images/fruit5.png" alt="">
+          <a class="link link-hover text-base font-semibold">Pomegranate</a>
+          </div>
+        </div>
       </section>
 
     </header>
@@ -156,7 +180,7 @@
     <main>
       
     </main>
-    <!-- <footer class="footer footer-center p-10 bg-[#121212] text-white rounded">
+    <footer class="footer footer-center p-10 bg-[#121212] text-white rounded">
         <div class="flex">
             <img src="./images/logo.png" alt="">
             <h4 class="text-4xl font-semibold">Fruit Burst</h4>
@@ -179,6 +203,6 @@
                 <a class="cursor-pointer"><i class="fa-brands fa-apple"></i></a>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
